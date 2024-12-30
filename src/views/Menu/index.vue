@@ -49,7 +49,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import { bus } from '@/utils/eventBus'
 import { defineAsyncComponent, defineComponent } from 'vue'
 import { useTableData, useTableOperate } from './hooks/index'

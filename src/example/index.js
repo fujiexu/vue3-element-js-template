@@ -16,14 +16,5 @@ export const exampleRoutes = [
       title: 'ExampleEchartsGlMap',
       ignore: true
     }
-  },
-  {
-    path: 'example/upload',
-    name: 'ExampleUpload',
-    component: () => import('./Upload.vue'),
-    meta: {
-      title: 'ExampleUpload',
-      ignore: true
-    }
   }
 ]
