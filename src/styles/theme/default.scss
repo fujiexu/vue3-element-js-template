@@ -1,0 +1,40 @@
+//定制element主题风格
+
+//主题色
+$tp-color-primary: #1d69e6 !default;
+$tp-color-success: #67c23a !default;
+$tp-color-warning: #e6a23c !default;
+$tp-color-remind: #fe731a !default;
+$tp-color-danger: #f56c6c !default;
+$tp-color-error: #e72e2e !default;
+$tp-color-info: #909399 !default;
+
+//文本颜色
+$tp-text-color-primary: #303133 !default;
+$tp-text-color-regular: #606266 !default;
+$tp-text-color-secondary: #909399 !default;
+$tp-text-color-placeholder: #c0c4cc !default;
+
+//边框颜色
+$tp-border-color-base: #e5e5e5 !default;
+$tp-border-color-light: #e5e5e5 !default;
+$tp-border-color-lighter: #e5e5e5 !default;
+$tp-border-color-extra-light: #e5e5e5 !default;
+
+//阴影颜色
+$tp-shadow-color-base: rgb(0 0 0 / 12%) !default;
+$tp-shadow-color-base2: rgb(0 0 0 / 4%) !default;
+$tp-shadow-color-light: rgb(0 0 0 / 10%) !default;
+$tp-box-shadow-base: 0 2px 4px $tp-shadow-color-base !default;
+$tp-box-shadow-base2: 0 0 6px $tp-shadow-color-base2 !default;
+$tp-box-shadow-light: 0 2px 12px 0 $tp-shadow-color-light !default;
+
+// 系统样式
+
+//背景颜色
+$tp-bg-color: #f5f5f5 !default;
+$tp-header-bg-color: $tp-color-primary !default;
+$tp-content-bg-color: #fff !default;
+$tp-table-head-bg-color: #f9f9f9 !default;
+$tp-back-top-bg-color: #ededed !default; //回到顶部按钮
+$tp-report-template-table-head-bg-color: #e8f0fc !default;

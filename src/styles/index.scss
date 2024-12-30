@@ -1,0 +1,119 @@
+@import './common/index';
+
+// .tp-normal-title
+@include b(normal-title) {
+  position: relative;
+  color: $tp-color-primary;
+  font-size: $tp-font-size-medium;
+  text-indent: $tp-default-dis * 0.5;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    height: 14px;
+    margin: auto 0;
+    border-radius: $tp-title-sign-width * 0.5;
+    background-color: $tp-color-primary;
+  }
+}
+
+//详情
+// .tp-detail
+@include b(detail) {
+  // .tp-detail-item
+  @include b(detail-item) {
+    display: flex;
+    align-items: center;
+    margin-bottom: $tp-font-size-medium;
+    line-height: $tp-font-size-medium;
+
+    // .tp-detail-item__label
+    @include e(label) {
+      flex-shrink: 0;
+      width: 100px;
+      padding-right: $tp-default-dis * 0.5;
+      color: $tp-text-color-secondary;
+      text-align: right;
+
+      @include tp-text-colon;
+    }
+
+    // .tp-detail-item__content
+    @include e(content) {
+      flex: 1;
+      overflow: hidden;
+
+      a {
+        color: $tp-color-primary;
+      }
+
+      // .tp-rich-text
+      // @include b(rich-text) {
+      //   padding-left: $tp-default-dis;
+      //   line-height: normal;
+      // }
+
+      // //.tp-detail-item__content--rich-text
+      // @include e(rich-text) {
+      //   padding-left: $tp-default-dis;
+      //   line-height: normal;
+      // }
+    }
+  }
+}
+
+//面包屑样式
+// .tp-breadcrumb
+@include b(breadcrumb) {
+  display: flex;
+  position: relative;
+  padding: 0 $tp-default-dis;
+
+  // .tp-breadcrumb__item
+  @include e(item) {
+    height: $tp-breadcrumb-height;
+    color: $tp-text-color-secondary;
+    line-height: 1;
+    cursor: pointer;
+
+    @include tp-vcenter;
+
+    &::after {
+      content: '/';
+      padding: 0 $tp-default-dis * 0.5;
+      color: $tp-text-color-secondary;
+    }
+
+    &:hover {
+      color: $tp-text-color-primary;
+    }
+
+    &:last-child {
+      color: $tp-text-color-primary;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+/* 禁止选中 */
+.tp-no-select {
+  -webkit-user-select: none;
+
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+
+  /* Firefox all */
+  -ms-user-select: none;
+
+  /* IE 10+ */
+  -o-user-select: none;
+  user-select: none;
+}

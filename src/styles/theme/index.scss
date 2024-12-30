@@ -1,0 +1,60 @@
+$tp-colors: (
+  // 'white': white,
+  // 'black': black,
+  'primary':
+    (
+      'base': $tp-color-primary
+    ),
+  'success': (
+    'base': $tp-color-success
+  ),
+  'warning': (
+    'base': $tp-color-warning
+  ),
+  'remind': (
+    'base': $tp-color-remind
+  ),
+  'danger': (
+    'base': $tp-color-danger
+  ),
+  'error': (
+    'base': $tp-color-error
+  ),
+  'info': (
+    'base': $tp-color-info
+  )
+);
+$tp-text-color: (
+  'primary': $tp-text-color-primary,
+  'regular': $tp-text-color-regular,
+  'secondary': $tp-text-color-secondary,
+  'placeholder': $tp-text-color-placeholder
+);
+$tp-border-color: (
+  'base': $tp-border-color-base,
+  'light': $tp-border-color-light,
+  'lighter': $tp-border-color-lighter,
+  'extra-light': $tp-border-color-extra-light
+);
+$tp-box-shadow: (
+  'base': (
+    $tp-box-shadow-base,
+    $tp-box-shadow-base2
+  ),
+  'light': $tp-box-shadow-light
+);
+
+// $tp-bg-colors: (
+//   '': $tp-bg-color,
+//   'page': $tp-bg-color,
+//   'overlay': $tp-bg-color
+// );
+
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+    $colors: $tp-colors,
+    $text-color: $tp-text-color,
+    $border-color: $tp-border-color,
+    $box-shadow: $tp-box-shadow,
+    // $bg-color: $tp-bg-colors
+  );
+@use 'element-plus/theme-chalk/src/index.scss' as *;
