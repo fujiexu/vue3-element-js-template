@@ -32,7 +32,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent, reactive, toRaw } from 'vue'
 import { Md5 } from 'ts-md5'
 import { useMyStore } from '@/hooks'

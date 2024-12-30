@@ -2,7 +2,7 @@
   <div class="echarts" ref="echartRef"></div>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent, onMounted, ref } from 'vue'
 import * as echarts from 'echarts'
 import 'echarts-gl'

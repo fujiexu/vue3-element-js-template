@@ -23,7 +23,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import { formatTime } from '@/utils/util'
 import { defineComponent, ref, watch } from 'vue'
 

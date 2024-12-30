@@ -21,7 +21,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent, ref } from 'vue'
 import { icons } from 'virtual:icon'
 import { useClipboard } from '@vueuse/core'
@@ -32,7 +32,7 @@ export default defineComponent({
     console.log('ExampleIcon setup', icons)
     const source = ref('')
     const { copy } = useClipboard({ source, legacy: true })
-    const nCopy = async (name: string) => {
+    const nCopy = async name => {
       source.value = `<svg-icon name="${name}" />`
       await copy(source.value)
       ElNotification({

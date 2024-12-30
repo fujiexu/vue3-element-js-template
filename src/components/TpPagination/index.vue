@@ -10,15 +10,14 @@
     :total="pages.total"
   />
 </template>
-<script lang="ts">
-import { IPage } from '@/hooks/usePage'
-import { defineComponent, PropType } from 'vue'
+<script>
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'TpPagination',
   props: {
     pages: {
-      type: Object as PropType<IPage>,
+      type: Object,
       required: true
     },
     layout: {
@@ -28,11 +27,11 @@ export default defineComponent({
   },
   emits: ['currentChange', 'sizeChange'],
   setup(props, { emit }) {
-    const onChange = (current: number) => {
+    const onChange = current => {
       emit('currentChange', current)
     }
 
-    const showSizeChange = (pageSize: number) => {
+    const showSizeChange = pageSize => {
       emit('sizeChange', pageSize)
     }
 

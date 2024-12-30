@@ -2,7 +2,7 @@
   <div class="home tp-card tp-full"> 首页 </div>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from 'vue'
 
 export default defineComponent({

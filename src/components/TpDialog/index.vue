@@ -15,10 +15,10 @@
   </el-dialog>
 </template>
 
-<script lang="ts">
+<script>
 import { computed, defineComponent } from 'vue'
 
-const widths: Record<string, string> = {
+const widths = {
   large: '1080px',
   default: '880px',
   small: '680px'

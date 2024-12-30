@@ -4,7 +4,7 @@
   </el-config-provider>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from 'vue'
 import zhCn from 'element-plus/es/locale/lang/zh-cn'
 
