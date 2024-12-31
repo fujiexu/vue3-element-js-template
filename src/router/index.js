@@ -48,6 +48,7 @@ const routes = [
           ignore: true
         }
       },
+
       ...exampleRoutes
     ]
   }
